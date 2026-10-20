@@ -1,0 +1,66 @@
+name: Bug 回報（中文）
+description: 回報錯誤或非預期的行為
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 問題描述
+      description: 請清楚描述遇到的問題。
+      placeholder: 發生了什麼事？
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tool
+    attributes:
+      label: 使用的工具
+      options:
+        - Power Team Client Finder（/power-team）
+        - Referral Partner Grid（/partner-grid）
+        - 分享頁（/r/...）
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重現步驟
+      description: 要怎麼重現這個問題？輸入了哪些產業？
+      placeholder: |
+        1. 開啟 ReferralKit
+        2. 前往「...」
+        3. 輸入「...」
+        4. 出現錯誤
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 預期行為
+      description: 你原本預期會發生什麼？
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: 裝置與瀏覽器
+      placeholder: 例如 iPhone 15 / Safari、Windows / Chrome 130
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截圖
+      description: 如果有的話，請附上截圖或螢幕錄影。
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 其他補充
+      description: 任何其他有助於理解問題的資訊。
